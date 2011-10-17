@@ -1,6 +1,5 @@
 # digit(): splits an integer into a list of sorted digits
 digit = lambda i: sorted(str(i))
-
 i = 1
 while True:
     if digit(i) == digit(2 * i) == digit(3 * i) == digit(4 * i) == \
