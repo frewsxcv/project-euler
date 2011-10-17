@@ -4,8 +4,9 @@ def is_palindrome(i):
         return True
     return False
 
+largest = 0
 for i in range(999, 99, -1):
     for j in range(i, 99, -1):
-        if is_palindrome(i * j):
-            print("{0} * {1} = {2}".format(i, j, i*j))
-            exit()
+        if is_palindrome(i * j) and i * j > largest:
+            largest = i * j
+print(largest)
