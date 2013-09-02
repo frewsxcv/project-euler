@@ -1,6 +1,6 @@
 use std::*;
 
-fn is_multiple(x: int) -> bool { x % 3 == 0 || x % 5 == 0 }
+fn is_multiple(x: int) -> bool {x % 3 == 0 || x % 5 == 0}
 
 fn work(x: int) -> int {
    return match x {
